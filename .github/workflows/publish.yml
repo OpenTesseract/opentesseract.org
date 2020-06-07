@@ -23,8 +23,6 @@ jobs:
           service_account_email: ${{ secrets.GKE_EMAIL }}
           service_account_key: ${{ secrets.GKE_KEY }}
 
-      - run: gcloud auth configure-docker
-
       - name: Deploy
         run: |
           ls |grep -v '.git' | gsutil -m cp -I gs://opentesseract.org
