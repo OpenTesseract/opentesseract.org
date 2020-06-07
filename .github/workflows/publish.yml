@@ -25,4 +25,4 @@ jobs:
 
       - name: Deploy
         run: |
-          ls |grep -v '.git' | gsutil -m cp -I gs://opentesseract.org
+          ls |grep -v '.git' | gsutil -m cp -I gs://www.opentesseract.org
